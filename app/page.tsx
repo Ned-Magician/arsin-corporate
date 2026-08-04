@@ -1,9 +1,11 @@
-import Container from "@/components/ui/Container";
+import Hero from "@/components/sections/Hero";
+import Services from "@/components/sections/services/Services";
 
-export default function HomePage() {
+export default function Home() {
   return (
-    <Container>
-      <h1>Arsin Corporate</h1>
-    </Container>
+    <>
+      <Hero />
+      <Services />
+    </>
   );
 }
