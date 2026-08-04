@@ -1,7 +1,7 @@
-import Container from "@/components/ui/Container";
-import Button from "../ui/Button";
+import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
 
-export default function Hero() {
+export function Hero() {
   return (
     <section className="py-24">
       <Container>

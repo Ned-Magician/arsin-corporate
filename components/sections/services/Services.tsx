@@ -1,7 +1,7 @@
-import Container from "@/components/ui/Container";
-import ServiceCard from "./ServiceCard";
+import { Container } from "@/components/ui/Container";
+import { ServiceCard } from "./ServiceCard";
 
-export default function Services() {
+export function Services() {
   return (
     <section>
       <Container>

@@ -3,7 +3,7 @@ type ServiceCardProps = {
   description: string;
 };
 
-export default function ServiceCard({ title, description }: ServiceCardProps) {
+export function ServiceCard({ title, description }: ServiceCardProps) {
   return (
     <div>
       <h3>{title}</h3>

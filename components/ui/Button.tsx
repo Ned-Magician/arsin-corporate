@@ -2,7 +2,7 @@ type ButtonProps = {
   children: React.ReactNode;
   variant: "primary" | "secondary" | "outline";
 };
-export default function Button({ children, variant }: ButtonProps) {
+export function Button({ children, variant }: ButtonProps) {
   let buttonStyle = "";
   if (variant === "primary") {
     buttonStyle =
