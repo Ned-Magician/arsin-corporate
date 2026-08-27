@@ -1,8 +1,14 @@
-type ButtonProps = {
-  children: React.ReactNode;
+import type { ButtonHTMLAttributes } from "react";
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant: "primary" | "secondary" | "outline";
 };
-export function Button({ children, variant }: ButtonProps) {
+export function Button({
+  children,
+  variant,
+  type = "button",
+  className,
+  ...props
+}: ButtonProps) {
   let buttonStyle = "";
   if (variant === "primary") {
     buttonStyle =
@@ -14,5 +20,13 @@ export function Button({ children, variant }: ButtonProps) {
     buttonStyle =
       "bg-transparent border border-green-600 text-green-600 px-6 py-3 rounded-md font-semibold hover:bg-green-600 hover:text-white transition";
   }
-  return <button className={buttonStyle}>{children}</button>;
+  return (
+    <button
+      type={type}
+      className={`${buttonStyle} ${className ?? ""}`}
+      {...props}
+    >
+      {children}
+    </button>
+  );
 }
