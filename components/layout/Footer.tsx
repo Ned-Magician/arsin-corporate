@@ -10,7 +10,7 @@ export function Footer() {
           <p>Arsin Industrial Group</p>
 
           <nav className="flex gap-6">
-            <Link href="/#services">Services</Link>
+            <Link href="/services">Services</Link>
             <Link href="/#gallery">Gallery</Link>
             <Link href="/#contact">Contact</Link>
           </nav>

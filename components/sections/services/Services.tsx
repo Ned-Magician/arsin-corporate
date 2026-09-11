@@ -1,24 +1,7 @@
 import { Container } from "@/components/ui/Container";
-import { ServiceCard } from "./ServiceCard";
+import { ServiceCard } from "@/components/services/ServiceCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-
-const services = [
-  {
-    title: "Decorative MDF Lamination",
-    description:
-      "We laminate MDF panels using your decorative paper or available workshop designs.",
-  },
-  {
-    title: "Customer Decorative Papers",
-    description:
-      "Bring your own decorative paper or choose from available patterns in our workshop.",
-  },
-  {
-    title: "Standard Panel Sizes",
-    description:
-      "We laminate standard panel sizes with consistent quality and precision.",
-  },
-];
+import { services } from "@/data/services";
 
 export function Services() {
   return (
@@ -26,7 +9,7 @@ export function Services() {
       <Container>
         <div>
           <SectionHeading>Our Services</SectionHeading>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2">
             {services.map((service) => {
               return (
                 <ServiceCard

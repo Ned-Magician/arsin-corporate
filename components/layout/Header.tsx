@@ -25,7 +25,7 @@ export function Header() {
             </Link>
 
             <div className="hidden gap-6 md:flex">
-              <Link href="/#services">Services</Link>
+              <Link href="/services">Services</Link>
               <Link href="/#gallery">Gallery</Link>
               <Link href="/#contact">Contact</Link>
             </div>
@@ -46,7 +46,7 @@ export function Header() {
               id="mobile-menu"
               className="flex flex-col gap-4 pt-4 md:hidden"
             >
-              <Link href="/#services" onClick={() => setMenuOpen(false)}>
+              <Link href="/services" onClick={() => setMenuOpen(false)}>
                 Services
               </Link>
 
