@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button";
+import { LinkButton } from "@/components/ui/LinkButton";
 
 export function Hero() {
   return (
@@ -15,8 +15,13 @@ export function Hero() {
             across Iran.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button variant="primary">Contact on WhatsApp</Button>
-            <Button variant="secondary">View Gallery</Button>
+            <LinkButton href="/#contact" variant="primary">
+              Contact Us
+            </LinkButton>
+
+            <LinkButton href="/#gallery" variant="secondary">
+              View Gallery
+            </LinkButton>
           </div>
         </div>
       </Container>

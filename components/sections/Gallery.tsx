@@ -34,7 +34,9 @@ export function Gallery() {
   return (
     <section id="gallery" className="py-20">
       <Container>
-        <SectionHeading>Our Work</SectionHeading>
+        <SectionHeading description="A selection of Arsin's MDF lamination work.">
+          Our Work
+        </SectionHeading>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {galleryImages.map((image) => (
             <Image
