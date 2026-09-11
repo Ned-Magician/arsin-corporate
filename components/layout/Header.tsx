@@ -29,7 +29,7 @@ export function Header() {
               <Link href="/gallery">Gallery</Link>
               <Link href="/about">About</Link>
               <Link href="/faq">FAQ</Link>
-              <Link href="/#contact">Contact</Link>
+              <Link href="/contact">Contact</Link>
             </div>
 
             <button
@@ -64,7 +64,7 @@ export function Header() {
                 FAQ
               </Link>
 
-              <Link href="/#contact" onClick={() => setMenuOpen(false)}>
+              <Link href="/contact" onClick={() => setMenuOpen(false)}>
                 Contact
               </Link>
             </div>

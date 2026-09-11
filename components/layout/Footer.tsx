@@ -14,7 +14,7 @@ export function Footer() {
             <Link href="/gallery">Gallery</Link>
             <Link href="/about">About</Link>
             <Link href="/faq">FAQ</Link>
-            <Link href="/#contact">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </nav>
         </div>
       </Container>
