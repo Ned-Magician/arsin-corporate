@@ -26,8 +26,8 @@ export function Header() {
 
             <div className="hidden gap-6 md:flex">
               <Link href="/services">Services</Link>
-              <Link href="/#gallery">Gallery</Link>
-              <Link href="/#contact">Contact</Link>
+              <Link href="/gallery">Gallery</Link>
+              <Link href="/contact">Contact</Link>
             </div>
 
             <button
@@ -50,11 +50,11 @@ export function Header() {
                 Services
               </Link>
 
-              <Link href="/#gallery" onClick={() => setMenuOpen(false)}>
+              <Link href="/gallery" onClick={() => setMenuOpen(false)}>
                 Gallery
               </Link>
 
-              <Link href="/#contact" onClick={() => setMenuOpen(false)}>
+              <Link href="/contact" onClick={() => setMenuOpen(false)}>
                 Contact
               </Link>
             </div>
