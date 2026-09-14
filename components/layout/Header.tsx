@@ -27,7 +27,11 @@ export function Header() {
 
             <div className="hidden gap-6 md:flex">
               {navLinks.map((link) => (
-                <Link key={link.href} href={link.href}>
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="transition hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-4"
+                >
                   {link.label}
                 </Link>
               ))}
@@ -53,6 +57,7 @@ export function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  className="transition hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-4"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}

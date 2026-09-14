@@ -12,7 +12,11 @@ export function Footer() {
 
           <nav className="flex flex-wrap gap-x-6 gap-y-3">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-4"
+              >
                 {link.label}
               </Link>
             ))}
