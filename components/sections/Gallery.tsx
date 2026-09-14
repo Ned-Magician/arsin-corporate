@@ -45,7 +45,7 @@ export function Gallery() {
               alt={image.alt}
               width={800}
               height={600}
-              className="h-64 w-full rounded-lg object-cover"
+              className="h-64 w-full rounded-lg object-cover transition hover:scale-[1.02]"
             />
           ))}
         </div>
