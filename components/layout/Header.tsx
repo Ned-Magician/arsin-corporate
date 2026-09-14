@@ -3,8 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { navLinks } from "@/data/navigation";
+
 import { Container } from "@/components/ui/Container";
+import { navLinks } from "@/data/navigation";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,14 +40,14 @@ export function Header() {
               aria-expanded={menuOpen}
               aria-controls="mobile-menu"
             >
-              Menu
+              {menuOpen ? "Close" : "Menu"}
             </button>
           </div>
 
           {menuOpen && (
             <div
               id="mobile-menu"
-              className="flex flex-col gap-4 pt-4 md:hidden"
+              className="flex flex-col gap-4 border-t border-gray-200 pt-4 md:hidden"
             >
               {navLinks.map((link) => (
                 <Link
