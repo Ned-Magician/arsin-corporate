@@ -1,8 +1,8 @@
 # Arsin Corporate Website
 
-A production-style corporate website built as a frontend portfolio project.
+A responsive corporate website built as a frontend portfolio project using Next.js, React, TypeScript, and Tailwind CSS.
 
-The project represents an MDF lamination business and was created to practice real-world frontend development with Next.js, React, TypeScript, Tailwind CSS, reusable component architecture, responsive design, accessibility, routing, and professional Git workflow.
+The project represents an MDF lamination business and was built to practice real-world frontend architecture, reusable components, responsive design, accessibility, routing, and professional Git workflow.
 
 ## Live Demo
 
@@ -19,17 +19,19 @@ Coming soon.
 
 ## Features
 
-- Responsive multi-page corporate website
+- Responsive multi-page website
 - Next.js App Router
-- Mobile navigation menu
+- Desktop and mobile navigation
 - Reusable React components
-- Shared navigation, services, FAQ, and contact data
-- Responsive services and gallery layouts
-- Accessible navigation and keyboard focus states
-- Optimized images with Next.js Image
+- Shared navigation and business data
+- Services and gallery layouts
+- FAQ section
+- Contact section
+- Accessible keyboard focus states
+- Semantic HTML
+- Next.js image optimization
+- Mobile-first responsive design
 - Static production rendering
-- Reusable button and section heading components
-- Responsive desktop, tablet, and mobile layouts
 
 ## Pages
 
