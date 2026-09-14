@@ -15,7 +15,7 @@ export function LinkButton({ href, children, variant }: LinkButtonProps) {
   return (
     <Link
       href={href}
-      className={`rounded-md px-6 py-3 font-semibold transition ${variantStyle}`}
+      className={`rounded-md px-6 py-3 font-semibold transition focus-visible:outline-2 focus-visible:outline-offset-4 ${variantStyle}`}
     >
       {children}
     </Link>
