@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Container } from "@/components/ui/Container";
+import { navLinks } from "@/data/navigation";
 
 export function Footer() {
   return (
@@ -10,11 +11,11 @@ export function Footer() {
           <p>Arsin Industrial Group</p>
 
           <nav className="flex gap-6">
-            <Link href="/services">Services</Link>
-            <Link href="/gallery">Gallery</Link>
-            <Link href="/about">About</Link>
-            <Link href="/faq">FAQ</Link>
-            <Link href="/contact">Contact</Link>
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href}>
+                {link.label}
+              </Link>
+            ))}
           </nav>
         </div>
       </Container>
