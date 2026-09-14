@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function HowItWorks() {
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-gray-50 py-16 sm:py-20">
       <Container>
         <SectionHeading>How It Works</SectionHeading>
 

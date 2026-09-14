@@ -32,21 +32,22 @@ const galleryImages: GalleryImage[] = [
 
 export function Gallery() {
   return (
-    <section id="gallery" className="py-20">
+    <section id="gallery" className="py-16 sm:py-20">
       <Container>
         <SectionHeading description="A selection of Arsin's MDF lamination work.">
           Our Work
         </SectionHeading>
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {galleryImages.map((image) => (
-            <Image
-              key={image.src}
-              src={image.src}
-              alt={image.alt}
-              width={800}
-              height={600}
-              className="h-64 w-full rounded-lg object-cover transition hover:scale-[1.02]"
-            />
+            <div key={image.src} className="overflow-hidden rounded-lg">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                width={800}
+                height={600}
+                className="h-64 w-full object-cover transition duration-300 hover:scale-[1.02]"
+              />
+            </div>
           ))}
         </div>
       </Container>

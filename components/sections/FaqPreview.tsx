@@ -3,25 +3,27 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function FaqPreview() {
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-gray-50 py-16 sm:py-20">
       <Container>
-        <SectionHeading>Frequently Asked Questions</SectionHeading>
+        <SectionHeading description="Common questions customers usually ask before starting a project.">
+          Frequently Asked Questions
+        </SectionHeading>
 
-        <div className="space-y-4">
-          <details className="rounded-lg border border-gray-200 bg-white p-5">
-            <summary className="cursor-pointer font-semibold">
+        <div className="mx-auto max-w-3xl space-y-4">
+          <details className="group rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+            <summary className="cursor-pointer list-none font-semibold text-gray-950">
               How much does MDF lamination cost?
             </summary>
           </details>
 
-          <details className="rounded-lg border border-gray-200 bg-white p-5">
-            <summary className="cursor-pointer font-semibold">
+          <details className="group rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+            <summary className="cursor-pointer list-none font-semibold text-gray-950">
               How long does production take?
             </summary>
           </details>
 
-          <details className="rounded-lg border border-gray-200 bg-white p-5">
-            <summary className="cursor-pointer font-semibold">
+          <details className="group rounded-xl border border-gray-200 bg-white p-5 shadow-sm">
+            <summary className="cursor-pointer list-none font-semibold text-gray-950">
               What is the quality like?
             </summary>
           </details>
